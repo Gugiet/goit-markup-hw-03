@@ -485,6 +485,7 @@ h1 {
 .products li {
   padding-right: 30px;
   padding-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 .prod-title {
   font-size: 18;
