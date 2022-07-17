@@ -54,23 +54,27 @@ img {
 }
 
 .container {
-  width: 1600px;
-  align-items: center;
-  /* margin: 0 auto; */
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* style nagłówka */
-.header .countainer {
-  display: flex;
-  align-items: center;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+/* style nagłówka */
 .header {
   border: var(--first-background-color);
-  width: 1600px;
-  height: 80px;
   display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-
+.upper-line {
+  align-items: center;
+}
 .header .upper-line {
   background-color: var(--first-background-color);
   display: flex;
@@ -83,7 +87,6 @@ img {
   text-align: left;
   width: 145px;
   height: 31px;
-  margin-left: 215px;
 }
 .logo-up :hover {
   font-family: Raleway;
@@ -102,15 +105,20 @@ img {
   font-weight: 800;
   font-size: 26px;
 }
+
 .header .nav-links {
-  padding-left: 91px;
+  padding-left: 93px;
+  gap: 46px;
+  top: 32px;
 }
 .nav-links ul {
+  display: inline;
   font-weight: 600;
   font-size: 14px;
   font-style: normal;
   line-height: 16px;
   word-spacing: 46px;
+  align-items: center;
 }
 
 .nav-class li {
@@ -151,15 +159,15 @@ img {
 }
 
 .header .address-up {
-  padding-left: 371px;
+  margin-left: auto;
+  display: inline;
 }
 
 .address-up {
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
-  text-align: right;
-  top: 32px;
+  text-align: left;
 }
 
 .address-up :hover {
@@ -184,10 +192,9 @@ img {
 
 .main-headder {
   background-color: var(--second-background-color);
-  text-align: center;
+}
+.main-headder .container {
   align-items: center;
-  width: 1600px;
-  height: 600px;
 }
 h1 {
   font-weight: 900;
@@ -195,12 +202,15 @@ h1 {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--third-text-color);
-  padding: 200px 452px 40px 452px;
+  padding: 200px 252px 30px 252px;
 }
 
 .selector-main {
   font-style: normal;
+  text-align: center;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -213,7 +223,7 @@ h1 {
   cursor: pointer;
   width: 200px;
   height: 50px;
-  margin-bottom: 200px;
+  margin: 30px 500px 200px 500px;
 }
 
 .selector-main :hover,
@@ -224,11 +234,8 @@ h1 {
 /*komórki lorem ipsum*/
 .ipsum {
   display: flex;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-top: 94px;
   justify-content: space-evenly;
-  padding-bottom: 94px;
+  gap: 30px;
 }
 
 .ipsum.reversed {
@@ -250,10 +257,10 @@ h1 {
 
 .ipsum-secondarry {
   font-weight: 400;
-  font-size: 14;
+  font-size: 14px;
   font-style: normal;
   text-decoration: none;
-  text-align: left;
+  text-align: justify;
   display: flex;
 }
 
@@ -272,18 +279,16 @@ h1 {
 
 .photos ul {
   list-style: none;
+  gap: 30px;
 }
 .photo {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  margin-left: 215px;
-  margin-right: 215px;
-  padding-bottom: 188px;
 }
 
-/*Zespół*/
+/*Załoga*/
 .our-team {
   background-color: var(--first-background-color);
 }
@@ -310,9 +315,8 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 30px;
   padding-bottom: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
 }
 
 .members li {
@@ -338,7 +342,6 @@ h1 {
 .lower-line {
   background-color: var(--second-background-color);
   height: 252px;
-  padding-left: 215px;
   padding-top: 60px;
 }
 
@@ -381,6 +384,7 @@ h1 {
   font-style: normal;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  text-align: left;
 }
 
 .adress-down-second a:hover {
@@ -390,12 +394,18 @@ h1 {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.6);
 }
+.mail-bottom {
+  margin-bottom: 9px;
+}
 
 /*Style dla <main> Portfolio*/
-
 .selectors {
+  padding-bottom: 50px;
+}
+.selectors-list {
   background-color: var(--first-background-color);
   display: flex;
+  gap: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -474,28 +484,27 @@ h1 {
   list-style: none;
   text-align: center;
 }
-.products {
+
+.products-list {
   display: flex;
+  align-content: space-between;
   flex-wrap: wrap;
-  margin-left: 215px;
-  margin-top: 50px;
-  padding-bottom: 114px;
-  list-style: none;
+  flex-basis: calc((100% - 60px) / 3);
+  gap: 30px;
+  align-items: center;
 }
-.products li {
-  padding-right: 30px;
-  padding-bottom: 30px;
-  border: 1px solid #eeeeee;
+.products-list li {
+  border-bottom: 1px solid #eeeeee;
 }
 .prod-title {
-  font-size: 18;
+  font-size: 18px;
   font-weight: 700;
   color: var(--first-text-color);
   padding-top: 20px;
   padding-left: 24px;
 }
 .prod-decription {
-  font-size: 16;
+  font-size: 16px;
   font-weight: 400;
   color: var(--second-text-color);
   padding-left: 24px;
